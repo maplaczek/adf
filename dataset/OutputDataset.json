@@ -1,5 +1,5 @@
 {
-	"name": "OutputDataset_copy1",
+	"name": "OutputDataset",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureStorageLinkedService",
