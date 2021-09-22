@@ -270,9 +270,9 @@
 						"typeProperties": {
 							"notebookPath": "/Users/mplaczek@live.de/03-Data-Ingestion-Via-ADF/includes/Databricks-Data-Transformations",
 							"baseParameters": {
-								"Account Name": "placzek2109blob",
-								"Account Key": "dapi79bbad6b7c5233463cf63eea4764356c-2",
-								"Container Name": "dwtemp"
+								"accountName": "placzek2109blob",
+								"accountKey": "dapi79bbad6b7c5233463cf63eea4764356c-2",
+								"containerName": "dwtemp"
 							}
 						},
 						"linkedServiceName": {
