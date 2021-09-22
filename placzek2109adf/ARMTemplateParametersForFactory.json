@@ -5,6 +5,9 @@
 		"factoryName": {
 			"value": "placzek2109adf"
 		},
+		"AzureDatabricks_accessToken": {
+			"value": ""
+		},
 		"AzureStorageLinkedService_connectionString": {
 			"value": ""
 		},
