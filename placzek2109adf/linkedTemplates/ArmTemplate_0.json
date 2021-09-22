@@ -41,13 +41,7 @@
 						"type": "SecureString",
 						"value": "[parameters('AzureDatabricks_accessToken')]"
 					},
-					"newClusterNodeType": "Standard_DS3_v2",
-					"newClusterNumOfWorker": "1",
-					"newClusterSparkEnvVars": {
-						"PYSPARK_PYTHON": "/databricks/python3/bin/python3"
-					},
-					"newClusterVersion": "9.0.x-scala2.12",
-					"newClusterInitScripts": []
+					"existingClusterId": "0922-083417-jeeps483"
 				}
 			},
 			"dependsOn": []
