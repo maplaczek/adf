@@ -1081,7 +1081,7 @@
 						]
 					},
 					{
-						"name": "Stored procedure1",
+						"name": "Validate Import Rows",
 						"type": "SqlServerStoredProcedure",
 						"dependsOn": [],
 						"policy": {
@@ -1092,7 +1092,13 @@
 							"secureInput": false
 						},
 						"userProperties": [],
-						"typeProperties": {}
+						"typeProperties": {
+							"storedProcedureName": "[[SalesLT].[usp_CheckProductStaging]"
+						},
+						"linkedServiceName": {
+							"referenceName": "AzureSqlDatabase_Products",
+							"type": "LinkedServiceReference"
+						}
 					}
 				],
 				"policy": {
@@ -1103,7 +1109,8 @@
 			},
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/datasets/ProductsCSV')]",
-				"[concat(variables('factoryId'), '/datasets/ProductStaging')]"
+				"[concat(variables('factoryId'), '/datasets/ProductStaging')]",
+				"[concat(variables('factoryId'), '/linkedServices/AzureSqlDatabase_Products')]"
 			]
 		}
 	]
