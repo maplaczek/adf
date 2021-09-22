@@ -11,6 +11,10 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'accessToken' of 'AzureDatabricks'"
 		},
+		"AzureSqlDatabase_Products_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureSqlDatabase_Products'"
+		},
 		"AzureStorageLinkedService_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureStorageLinkedService'"
@@ -52,6 +56,9 @@
 					},
 					"AzureDatabricks_accessToken": {
 						"value": "[parameters('AzureDatabricks_accessToken')]"
+					},
+					"AzureSqlDatabase_Products_connectionString": {
+						"value": "[parameters('AzureSqlDatabase_Products_connectionString')]"
 					},
 					"AzureStorageLinkedService_connectionString": {
 						"value": "[parameters('AzureStorageLinkedService_connectionString')]"

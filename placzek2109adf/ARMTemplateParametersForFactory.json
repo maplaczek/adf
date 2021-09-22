@@ -8,6 +8,9 @@
 		"AzureDatabricks_accessToken": {
 			"value": ""
 		},
+		"AzureSqlDatabase_Products_connectionString": {
+			"value": ""
+		},
 		"AzureStorageLinkedService_connectionString": {
 			"value": ""
 		},
