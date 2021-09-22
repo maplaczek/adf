@@ -86,7 +86,7 @@
 					"baseParameters": {
 						"accountName": "placzek2109blob",
 						"accountKey": "dapi79bbad6b7c5233463cf63eea4764356c-2",
-						"containerName": "dwtemp"
+						"containerName": "\"dwtemp\""
 					}
 				},
 				"linkedServiceName": {
