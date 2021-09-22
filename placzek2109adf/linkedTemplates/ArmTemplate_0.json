@@ -578,8 +578,8 @@
 							"notebookPath": "/Users/mplaczek@live.de/03-Data-Ingestion-Via-ADF/includes/Databricks-Data-Transformations",
 							"baseParameters": {
 								"accountName": "placzek2109blob",
-								"accountKey": "dapi79bbad6b7c5233463cf63eea4764356c-2",
-								"containerName": "\"dwtemp\""
+								"accountKey": "bl7xCl2MgsL+YABmSKFLWbdo1Qrx5D+M0IP/ZgM38PiR/t/WyKtSI7PvBvdD7+3AegULBHtIUSvwoM0KwN67BQ==",
+								"containerName": "dwtemp"
 							}
 						},
 						"linkedServiceName": {
