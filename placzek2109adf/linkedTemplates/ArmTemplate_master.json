@@ -23,6 +23,10 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'DestinationContainer'"
 		},
+		"BlobStorage_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'BlobStorage'"
+		},
 		"PublicDataset_sasUri": {
 			"type": "secureString",
 			"metadata": "Secure string for 'sasUri' of 'PublicDataset'"
@@ -66,12 +70,35 @@
 					"DestinationContainer_connectionString": {
 						"value": "[parameters('DestinationContainer_connectionString')]"
 					},
+					"BlobStorage_connectionString": {
+						"value": "[parameters('BlobStorage_connectionString')]"
+					},
 					"PublicDataset_sasUri": {
 						"value": "[parameters('PublicDataset_sasUri')]"
 					}
 				}
 			},
 			"dependsOn": []
+		},
+		{
+			"name": "placzek2109adf_ArmTemplate_1",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2018-02-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_1.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
+					}
+				}
+			},
+			"dependsOn": [
+				"[resourceId('Microsoft.Resources/deployments', 'placzek2109adf_ArmTemplate_0')]"
+			]
 		}
 	]
 }

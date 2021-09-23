@@ -17,6 +17,9 @@
 		"DestinationContainer_connectionString": {
 			"value": ""
 		},
+		"BlobStorage_connectionString": {
+			"value": ""
+		},
 		"PublicDataset_sasUri": {
 			"value": ""
 		},
