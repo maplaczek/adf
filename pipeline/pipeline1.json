@@ -340,8 +340,7 @@
 					"body": {
 						"DataFactoryName": "@{pipeline().DataFactory}",
 						"PipelineName": "@{pipeline().Pipeline}",
-						"ErrorMessage": "",
-						"EmailTo": "@pipeline().parameters.EmailTo"
+						"ErrorMessage": ""
 					}
 				}
 			}
