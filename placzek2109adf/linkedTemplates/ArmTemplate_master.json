@@ -19,13 +19,13 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureStorageLinkedService'"
 		},
-		"DestinationContainer_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'DestinationContainer'"
-		},
 		"BlobStorage_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'BlobStorage'"
+		},
+		"DestinationContainer_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'DestinationContainer'"
 		},
 		"PublicDataset_sasUri": {
 			"type": "secureString",
@@ -67,11 +67,11 @@
 					"AzureStorageLinkedService_connectionString": {
 						"value": "[parameters('AzureStorageLinkedService_connectionString')]"
 					},
-					"DestinationContainer_connectionString": {
-						"value": "[parameters('DestinationContainer_connectionString')]"
-					},
 					"BlobStorage_connectionString": {
 						"value": "[parameters('BlobStorage_connectionString')]"
+					},
+					"DestinationContainer_connectionString": {
+						"value": "[parameters('DestinationContainer_connectionString')]"
 					},
 					"PublicDataset_sasUri": {
 						"value": "[parameters('PublicDataset_sasUri')]"

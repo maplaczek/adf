@@ -14,10 +14,10 @@
 		"AzureStorageLinkedService_connectionString": {
 			"value": ""
 		},
-		"DestinationContainer_connectionString": {
+		"BlobStorage_connectionString": {
 			"value": ""
 		},
-		"BlobStorage_connectionString": {
+		"DestinationContainer_connectionString": {
 			"value": ""
 		},
 		"PublicDataset_sasUri": {
